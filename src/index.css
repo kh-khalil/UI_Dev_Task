@@ -1,13 +1,122 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: Helvetica;
+  background-color:#222222;
+  color: #000000
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* 
+    Mobile View 
+*/
+.page_title{
+  height: 72px;
+  width: 100%;
+  color:#fff;
+  text-align: left !important;
+  margin-bottom: 16px;
+}
+.page_title > h1{
+  font-family: Helvetica;
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 28px;
+  font-size: 28px;
+  padding: 30px 83px 14px 24px;
+  margin: 0;
+}
+.card_container{
+  margin: 0px 24px 24px 24px;
+  width: 366px;
+  height: 428px;
+  background-color:#FFFFFF;
+  border-radius: 0.5rem;
+}
+
+/* image */
+.big{
+  width:100%;
+  height:215px !important;
+  border-radius: 8px 8px 0 0;
+  background-color: #D8D8D8;
+}
+
+/* 
+      Card Details 
+*/
+/* Title */
+.make{
+  padding-top: 1px !important;
+  opacity: 0.75;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 19.2px;
+}
+.model{
+  opacity: 0.87;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
+/* Location & Shop Name*/
+.location_and_shop{
+  padding: 1px 0 0 0 !important;
+}
+.location, .shop_name{
+  font-size: 12px;
+  letter-spacing: 0;
+  font-weight: normal;
+  font-family: Helvetica;
+  line-height: 19.2px;
+}
+.shop_name{
+  font-weight: bold;
+}
+
+/* Price */
+.price{
+  background-color: #000000;
+  color: #fff;
+  max-width: max-content;
+  padding:10px 12px !important;
+  border-radius: 4px;
+  font-size:16px;
+  height:42px;
+}
+.price > .price_amount{
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+/* Other Renters */
+.other_renters{
+  border-top: 1px solid rgba(0, 0, 0, 0.16);
+  height: 49px;
+  width: 366px;
+}
+.other_renters_label{
+  padding: 15.34px 108px 16.66px 24px;
+}
+.other_renters_number{
+  opacity: 0.75;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 17px;
+  padding-left: 12px;
+  padding-right: 10px;
+  margin-bottom: 0;
+}
+.other_renters_price{  
+  opacity: 0.75;
+  color: #A00000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+  margin-bottom: 0;
 }
