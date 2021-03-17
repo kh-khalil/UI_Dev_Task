@@ -3,13 +3,13 @@ import fatboy from "./fatboy.jpg";
 
 export default function BikeCard(props) {
   return (
-    <div className={props.className}>
+    <div className={props.smallCard === "true" ? "bike_card_small" : ""}>
       <img
         src={fatboy}
         className={
-          props.imgClass === "big"
-            ? `p-0 m-0 col-12 ${props.imgClass}`
-            : `p-0 m-0 col ${props.imgClass}`
+          props.smallCard === "true"
+            ? "p-0 m-0 col small"
+            : "p-0 m-0 col-12 big"
         }
         alt="fatboy"
       />
@@ -17,10 +17,10 @@ export default function BikeCard(props) {
       {/* Details Section */}
       <div
         className={
-          props.imgClass === "big" ? "px-4 m-0 mt-4 d-grid" : "p-0 m-0 col"
+          props.smallCard === "true" ? "p-0 m-0 col" : "px-4 m-0 mt-4 d-grid"
         }
       >
-        {props.makeAndModel === "show" && (
+        {props.smallCard === "false" && (
           <div className="mb-4 text-left m-0 row">
             <h5 className="make p-0 col-12">Harley Davidson</h5>
             <h3 className="model m-0 p-0 col-12">Fat Boy Classic</h3>

@@ -12,14 +12,7 @@ export default function MobileScreen() {
       <div className="p-0 card_container text-center">
         {/* Bike Card Component*/}
         <BikeCard
-          imgClass="big" // big for selected renter & small for other renters
-          makeAndModel="show" // choose between show or hide
-          location=""
-          shopName=""
-          renterName=""
-          rating=""
-          price=""
-          otherRenters=""
+          smallCard="true" // true or false according to the card size that you want
         ></BikeCard>
 
         {/* Other Renters */}
@@ -35,14 +28,7 @@ export default function MobileScreen() {
       <div className="p-0 card_container text-center">
         {/* Bike Card Component*/}
         <BikeCard
-          imgClass="big" // big for selected renter & small for other renters
-          makeAndModel="show" // choose between show or hide
-          location=""
-          shopName=""
-          renterName=""
-          rating=""
-          price=""
-          otherRenters=""
+          smallCard="true" // true or false according to the card size that you want
         ></BikeCard>
 
         {/* Other Renters */}

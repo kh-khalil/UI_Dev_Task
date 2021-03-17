@@ -12,36 +12,21 @@ export default function DesktopScreen() {
       <div className="d-flex">
         {/* Card Container */}
         <div className="p-0 card_container text-center row">
+          
           {/* Bike Card Component*/}
           <BikeCard
-            // className="col-3"
-            imgClass="big" // big for selected renter & small for other renters
-            makeAndModel="show" // choose between show or hide
-            location=""
-            shopName=""
-            renterName=""
-            rating=""
-            price=""
-            otherRenters=""
+            smallCard="false" // true or false according to the card size that you want
           ></BikeCard>
+
 
           {/* Other Renters */}
           <div className="col other_renters_container text-left">
             <div className="other_renters_label">
               <p className="other_renters_number">6 Other Renters</p>
             </div>
-
             {/* Bike Card Component*/}
             <BikeCard
-              className="bike_card_small"
-              imgClass="small" // big for selected renter & small for other renters
-              makeAndModel="hide" // choose between show or hide
-              location=""
-              shopName=""
-              renterName=""
-              rating=""
-              price=""
-              otherRenters=""
+              smallCard="true" // true or false according to the card size that you want
             ></BikeCard>
           </div>
         </div>
