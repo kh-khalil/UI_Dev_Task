@@ -12,12 +12,10 @@ export default function DesktopScreen() {
       <div className="d-flex">
         {/* Card Container */}
         <div className="p-0 card_container text-center row">
-          
           {/* Bike Card Component*/}
           <BikeCard
             smallCard="false" // true or false according to the card size that you want
           ></BikeCard>
-
 
           {/* Other Renters */}
           <div className="col other_renters_container text-left">
@@ -27,6 +25,8 @@ export default function DesktopScreen() {
             {/* Bike Card Component*/}
             <BikeCard
               smallCard="true" // true or false according to the card size that you want
+              renterName="Matt Clarkson"
+              shopLocation="Near China Town, SF"
             ></BikeCard>
           </div>
         </div>
