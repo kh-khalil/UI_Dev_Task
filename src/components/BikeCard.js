@@ -3,13 +3,13 @@ import fatboy from "./fatboy.jpg";
 
 export default function BikeCard(props) {
   return (
-    <>
+    <div className={props.className}>
       <img
         src={fatboy}
         className={
           props.imgClass === "big"
             ? `p-0 m-0 col-12 ${props.imgClass}`
-            : `p-0 m-0 col-3 ${props.imgClass}`
+            : `p-0 m-0 col ${props.imgClass}`
         }
         alt="fatboy"
       />
@@ -17,13 +17,15 @@ export default function BikeCard(props) {
       {/* Details Section */}
       <div
         className={
-          props.imgClass === "big" ? "px-4 m-0 mt-4 d-grid" : "p-2 m-0 mt-4 col"
+          props.imgClass === "big" ? "px-4 m-0 mt-4 d-grid" : "p-0 m-0 col"
         }
       >
-        <div className="mb-4 text-left m-0 row">
-          <h5 className="make p-0 col-12">Harley Davidson</h5>
-          <h3 className="model m-0 p-0 col-12">Fat Boy Classic</h3>
-        </div>
+        {props.makeAndModel === "show" && (
+          <div className="mb-4 text-left m-0 row">
+            <h5 className="make p-0 col-12">Harley Davidson</h5>
+            <h3 className="model m-0 p-0 col-12">Fat Boy Classic</h3>
+          </div>
+        )}
 
         <div className="row justify-content-between w-100 m-0 mb-4">
           <div className="col m-0 mr-auto location_and_shop">
@@ -40,6 +42,6 @@ export default function BikeCard(props) {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

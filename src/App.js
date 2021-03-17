@@ -1,62 +1,24 @@
-import BikeCard from "./components/BikeCard";
+import React from "react";
+import { useMediaQuery } from "react-responsive";
+import DesktopScreen from "./screens/DesktopScreen.js";
+import MobileScreen from "./screens/MobileScreen.js";
 
 function App() {
+  const isMobile = useMediaQuery({ deviceWidth: 414 });
+  const isDesktop = useMediaQuery({ deviceWidth: 1440 });
   return (
     <div className="App">
-      {/* Page Title */}
-      <div className="page_title text-center">
-        <h1>Bikes in San Francisco</h1>
-      </div>
-
-      {/* Card Container */}
-      <div className="p-0 card_container text-center">
-        {/* Bike Card Component*/}
-        <BikeCard
-          imgClass="big" // big for selected renter & small for other renters
-          make=""
-          model=""
-          location=""
-          shopName=""
-          renterName=""
-          rating=""
-          price=""
-          otherRenters=""
-        ></BikeCard>
-
-        {/* Other Renters */}
-        <div className="other_renters text-left">
-          <div className="other_renters_label d-flex">
-            <i class="fas fa-bars "></i>
-            <p className="other_renters_number">6 Other Renters</p>
-            <p className="other_renters_price">from $120 /day</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Card Container */}
-      <div className="p-0 card_container text-center">
-        {/* Bike Card Component*/}
-        <BikeCard
-          imgClass="big" // big for selected renter & small for other renters
-          make=""
-          model=""
-          location=""
-          shopName=""
-          renterName=""
-          rating=""
-          price=""
-          otherRenters=""
-        ></BikeCard>
-
-        {/* Other Renters */}
-        <div className="other_renters text-left">
-          <div className="other_renters_label d-flex">
-            <i class="fas fa-bars "></i>
-            <p className="other_renters_number">6 Other Renters</p>
-            <p className="other_renters_price">from $120 /day</p>
-          </div>
-        </div>
-      </div>
+      {isMobile ? (
+        <MobileScreen />
+      ) : isDesktop ? (
+        <DesktopScreen />
+      ) : (
+        <h1 className="text-center diff_screen_size">
+          {" "}
+          Please switch to Mobile Screen with width = 414px or Desktop Screen
+          with width = 1440px{" "}
+        </h1>
+      )}
     </div>
   );
 }

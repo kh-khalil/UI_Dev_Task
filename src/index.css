@@ -7,6 +7,12 @@ body {
   color: #000000
 }
 
+.diff_screen_size{
+  padding-top: 15%;
+  color: #fff;
+
+}
+
 /* 
     Mobile View 
 */
@@ -94,7 +100,7 @@ body {
 }
 
 /* Other Renters */
-.other_renters{
+.other_renters_container{
   border-top: 1px solid rgba(0, 0, 0, 0.16);
   height: 49px;
   width: 366px;
@@ -119,4 +125,74 @@ body {
   letter-spacing: 0;
   line-height: 17px;
   margin-bottom: 0;
+}
+
+
+/* Desktop Styling using Media queries */
+@media only screen and (min-width: 1440px) {
+  .page_title{
+    height: 112px;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .page_title > h1{
+    font-family: Helvetica;
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 48px;
+    font-size: 40px;
+    padding: 32px 954px 32px 48px;
+    margin: 0;
+  }
+  .card_container{
+    margin: 0px 48px 48px 32px;
+    width: 744px;
+    height: 379px;
+    background-color:#FFFFFF;
+    border-radius: 0.5rem;
+  }
+
+  /* Left Side Section */
+  .big{
+    border-radius: 8px 0 0 0;
+  }
+
+  /* Other Renters Section */
+  .other_renters_container{
+    border-left: 1px solid rgba(0, 0, 0, 0.16);
+    height: 100%;
+    width: 378px;
+    padding:0 0 16px 0;
+
+  }
+  .other_renters_label{
+    padding:0 !important;
+    width: 100%;
+  }
+  .other_renters_number{
+    padding: 16px 241px 15px 20px;
+    margin-bottom: 0;
+  }
+
+  .bike_card_small{
+    height: 90px !important;
+    width: 338px !important; 
+    padding: 0 20px 0 20px;
+    border-radius: 0 0 8px 8px;
+    background-color: #FFFFFF;
+  }
+  .bike_card_small :hover{
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 12px;
+    background-color: rgba(0,0,0,0.04);
+  }
+  .small{
+    height: 70px;
+    width: 90px;
+    border-radius: 8px;
+    background-color: #D8D8D8;
+    margin: 2px 15.89px 2px 3px !important;
+  }
 }
