@@ -4,15 +4,16 @@ import BikeCard from "../components/BikeCard";
 export default function MobileScreen() {
   return (
     <>
-      ({/* Page Title */}
       <div className="page_title text-center">
         <h1>Bikes in San Francisco</h1>
       </div>
+
       {/* Card Container */}
       <div className="p-0 card_container text-center">
         {/* Bike Card Component*/}
         <BikeCard
-          smallCard="true" // true or false according to the card size that you want
+          model="Fat Boy® Classic"
+          smallCard="false" // true or false according to the card size that you want
         ></BikeCard>
 
         {/* Other Renters */}
@@ -24,11 +25,13 @@ export default function MobileScreen() {
           </div>
         </div>
       </div>
+
       {/* Card Container */}
       <div className="p-0 card_container text-center">
         {/* Bike Card Component*/}
         <BikeCard
-          smallCard="true" // true or false according to the card size that you want
+          model="Fat Boy® Classic"
+          smallCard="false" // true or false according to the card size that you want
         ></BikeCard>
 
         {/* Other Renters */}

@@ -75,14 +75,33 @@ body {
 .location_and_shop{
   padding: 1px 0 0 0 !important;
 }
-.location, .shop_name{
+.loc_row{
+  width: 125px;
+}
+.location{
+  height: 20px !important;
+  width: 101px !important;
+  opacity: 0.75;
+  color: #000000;
+  font-family: Helvetica;
   font-size: 12px;
   letter-spacing: 0;
-  font-weight: normal;
-  font-family: Helvetica;
   line-height: 19.2px;
+  margin-left: 12px !important;
+}
+.shop_row{
+  width: 169px;
 }
 .shop_name{
+  height: 20px !important;
+  width: 145px !important;
+  opacity: 0.75;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 19.2px;
+  margin-left: 12px !important;
+}
+.sf_bold{
   font-weight: bold;
 }
 
@@ -95,6 +114,7 @@ body {
   border-radius: 4px;
   font-size:16px;
   height:42px;
+  margin-left: 45px !important;
 }
 .price > .price_amount{
   font-size: 18px;
@@ -178,6 +198,10 @@ body {
     padding: 16px 241px 15px 20px;
     margin-bottom: 0;
   }
+  .renters_details_div{
+    height: 298px !important;
+    overflow: hidden;
+  }
 
   .bike_card_small{
     height: 90px !important;
@@ -188,11 +212,11 @@ body {
     border-spacing: 7px 0; */
     padding: 10px 11px 10px 10px;
   }
-  /* .bike_card_small :hover{
+  .hover_effect :hover{
     border: 1px solid rgba(0,0,0,0.08);
     border-radius: 12px;
     background-color: rgba(0,0,0,0.04);
-  } */
+  }
   .small_img_container{
     height: 70px;
     width: 90px;
@@ -252,7 +276,7 @@ body {
     padding:0 32px 10px 12px;
     margin:0 !important;
   }
-  .location{
+  .shop_name_small_card{
     height: 14px;
     width: 170px;
     opacity: 0.75;
@@ -275,6 +299,10 @@ body {
   .price_amount{
     font-weight: bold;
   }
-
+  .no_hover:hover{
+    border: 0 ;
+    border-radius: 0;
+    background-color: transparent;
+  }
 }
   

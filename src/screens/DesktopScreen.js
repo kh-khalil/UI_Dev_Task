@@ -15,6 +15,7 @@ export default function DesktopScreen() {
           {/* Bike Card Component*/}
           <BikeCard
             smallCard="false" // true or false according to the card size that you want
+            model="Fat Boy® Classic"
           ></BikeCard>
 
           {/* Other Renters */}
@@ -23,11 +24,28 @@ export default function DesktopScreen() {
               <p className="other_renters_number">6 Other Renters</p>
             </div>
             {/* Bike Card Component*/}
-            <BikeCard
-              smallCard="true" // true or false according to the card size that you want
-              renterName="Matt Clarkson"
-              shopLocation="Near China Town, SF"
-            ></BikeCard>
+            <div className="renters_details_div">
+              <BikeCard
+                smallCard="true" // true or false according to the card size that you want
+                renterName="Matt Clarkson"
+                shopLocation="Near China Town, SF"
+              ></BikeCard>
+              <BikeCard
+                smallCard="true" // true or false according to the card size that you want
+                renterName="Matt Clarkson"
+                shopLocation="Near China Town, SF"
+              ></BikeCard>
+              <BikeCard
+                smallCard="true" // true or false according to the card size that you want
+                renterName="Matt Clarkson"
+                shopLocation="Near China Town, SF"
+              ></BikeCard>
+              <BikeCard
+                smallCard="true" // true or false according to the card size that you want
+                renterName="Matt Clarkson"
+                shopLocation="Near China Town, SF"
+              ></BikeCard>
+            </div>
           </div>
         </div>
 
