@@ -241,4 +241,22 @@ body {
     position: absolute;
     padding: 4px 10px 4px 0;
   }
+  .price_small_card{
+    color: #790000;
+    letter-spacing: 0;
+    line-height: 17px;
+    font-size: 14px;
+    opacity: 0.87;
+    width: 66px;
+    height: 17px;
+    /* padding: 10px 136px 10px 15px; */
+    padding-top: 10px;
+    padding-right: 136px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+  .price_amount_num{
+    font-weight: bold;
+  }
 }
+  

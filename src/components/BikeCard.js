@@ -52,9 +52,7 @@ export default function BikeCard(props) {
           <p className="m-0 p-0 location">{props.shopLocation}</p>
         </div>
 
-        <div className="row price m-0 p-0">
-          {" "}
-          <span className="price_amount helvetica_bold">$154</span> / day
+        <div className="price_small_card"><span className="price_amount_num">$154</span> / day
         </div>
       </div>
     </div>
