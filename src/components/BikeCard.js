@@ -34,25 +34,30 @@ export default function BikeCard(props) {
   ) : (
     // Small Bike Card
     <div className="bike_card_small d-flex">
-      <img src={fatboy} className="p-0 m-0 small_img" alt="fatboy" />
+      <div className="small_img_container">
+        <img src={fatboy} className="small_img" alt="fatboy" />
+      </div>
 
       {/* Details Section */}
-      <div className="p-0 m-0 details_section_small">
-        <div className="row">
-          <i className="fas fa-user"></i>
-          <p className="m-0 p-0 renter_name">{props.renterName}</p>
-          <div className="ml-auto rating_div">
+      <div className="d-grid w-100">
+        <div className="row details_row row1">
+          <i className="fas fa-user user_icon"></i>
+
+          <p className="m-0 p-0 renter_smallcard">{props.renterName}</p>
+
+          <div className="rating_div d-flex">
             <span className="rating_num">5.0</span>{" "}
             <img src={star} className="star" alt="star" />
           </div>
         </div>
 
-        <div className="row">
+        <div className="row details_row row2">
           <i className="far fa-circle"></i>
           <p className="m-0 p-0 location">{props.shopLocation}</p>
         </div>
 
-        <div className="price_small_card"><span className="price_amount_num">$154</span> / day
+        <div className="row details_row row3">
+          <span className="price_amount">$154 </span> / day
         </div>
       </div>
     </div>
