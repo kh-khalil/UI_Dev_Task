@@ -166,11 +166,16 @@ body {
     letter-spacing: 0;
     line-height: 48px;
     font-size: 40px;
-    padding: 32px 954px 32px 48px;
+    padding: 32px 954px 32px 48px !important;
     margin: 0;
   }
+  .all_cards_container{
+    width: 824px !important;
+    padding-left: 48px !important;
+    padding-right: 48px !important;
+  }
   .card_container{
-    margin: 0px 48px 48px 32px;
+    margin: 0px 0 48px 0;
     width: 744px;
     height: 379px;
     background-color:#FFFFFF;
@@ -303,6 +308,22 @@ body {
     border: 0 ;
     border-radius: 0;
     background-color: transparent;
+  }
+  .place_holder_section{
+    height: 912px;
+    width: 600px;
+    opacity: 0.02;
+    background-color: #FFFFFF;
+  }
+  .place_holder_text{
+    opacity: 0.25;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 43px;
+    padding: 453px 179px 434px 198px;
   }
 }
   
